@@ -23,6 +23,30 @@ export default {
       primary: "var(--font-jetbrains-mono)",
     },
     extend: {
+      keyframes: {
+        slideInFromRight: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        slideOutToRight: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        fadeOut: {
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
+      },
+      animation: {
+        slideInFromRight: 'slideInFromRight 0.2s ease-out',
+        slideOutToRight: 'slideOutToRight 0.2s ease-in',
+        fadeIn: 'fadeIn 0.2s ease-out',
+        fadeOut: 'fadeOut 0.2s ease-in',
+      },
       colors: {
         primary: '#1c1c22',
         accent: {
