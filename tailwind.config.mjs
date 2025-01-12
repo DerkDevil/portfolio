@@ -48,7 +48,7 @@ export default {
         fadeOut: 'fadeOut 0.2s ease-in',
       },
       colors: {
-        primary: '#1c1c22',
+        primary: '#0e0e11',
         accent: {
           DEFAULT: '#00ff99',
           hover: '#00e187',
