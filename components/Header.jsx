@@ -2,10 +2,10 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 
 // components
-import Nav from './Nav';
-import MobileNav from './MobileNav';
+import Nav from './menu/Nav';
+import MobileNav from './menu/MobileNav';
 
-const Header = () => {
+const Header = ({ scrollToSection }) => {
   return (
     <header className='py-8 xl:py-12 text-white'>  
     <div className="container mx-auto flex justify-between items-center">
@@ -21,7 +21,7 @@ const Header = () => {
 
       {/* Desktop nav & hire me button */}
       <div className="hidden xl:flex items-center gap-8">
-        <Nav />
+        <Nav scrollToSection={scrollToSection} />
         <Link href="/contact">
           <Button>Hire Me</Button>
         </Link>
@@ -30,7 +30,7 @@ const Header = () => {
       {/* Mobile nav */}
 
       <div className="xl:hidden">
-        <MobileNav />
+        <MobileNav scrollToSection={scrollToSection} />
       </div>
       
     </div>

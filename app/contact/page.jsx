@@ -1,7 +1,7 @@
-const Contact = () => {
+const ContactComponent = () => {
   return (
     <div>Contact Page</div>
   )
 }
 
-export default Contact
+export default ContactComponent
