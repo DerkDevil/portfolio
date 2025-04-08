@@ -6,6 +6,7 @@ import Header from './Header';
 export const ScrollContext = createContext();
 
 const ScrollManager = ({ children }) => {
+  const homeRef = useRef(null);
   const resumeRef = useRef(null);
   const servicesRef = useRef(null);
   const workRef = useRef(null);
@@ -13,6 +14,9 @@ const ScrollManager = ({ children }) => {
 
   const scrollToSection = (section) => {
     switch (section) {
+      case 'home':
+        homeRef.current.scrollIntoView({ behavior: 'smooth' });
+        break;
       case 'resume':
         resumeRef.current.scrollIntoView({ behavior: 'smooth' });
         break;
@@ -31,11 +35,11 @@ const ScrollManager = ({ children }) => {
   };
 
   return (
-    <ScrollContext.Provider value={{ scrollToSection, resumeRef, servicesRef, workRef, contactRef }}>
+    <ScrollContext.Provider value={{ scrollToSection, homeRef, resumeRef, servicesRef, workRef, contactRef }}>
       <div>
         {React.Children.map(children, child =>
           React.isValidElement(child) && child.type === Header ?
-            React.cloneElement(child, { scrollToSection, resumeRef, servicesRef, workRef, contactRef }) :
+            React.cloneElement(child, { scrollToSection, homeRef, resumeRef, servicesRef, workRef, contactRef }) :
             child
         )}
       </div>

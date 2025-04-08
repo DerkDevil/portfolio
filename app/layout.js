@@ -22,8 +22,11 @@ export default function RootLayout({ children }) {
       <body className={JetBrainsMono.variable}>
         <ScrollManager>
           <Header />
-            {children}
+          {children}
         </ScrollManager>
+
+        {/* 👇 Aquí se renderiza el menú móvil (portal) */}
+        <div id="mobile-nav-root" />
       </body>
     </html>
   );
