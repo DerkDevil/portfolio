@@ -8,6 +8,7 @@ import ScrollManager from "../components/ScrollManager";
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weights: [100, 200, 300, 400, 500, 600, 700, 800],
+  display: "swap",
   variable: "--font-jetbrains-mono",
 });
 

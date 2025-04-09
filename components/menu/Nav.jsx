@@ -9,10 +9,6 @@ const links = [
     path: "/",
   },
   {
-    name: "services",
-    path: "/services",
-  },
-  {
     name: "resume",
     path: "/resume",
   },
@@ -33,7 +29,6 @@ const Nav = () => {
   return (
     <nav className="flex gap-8">
       <button onClick={() => scrollToSection('home')}>Home</button>
-      <button onClick={() => scrollToSection('services')}>Services</button>
       <button onClick={() => scrollToSection('resume')}>Resume</button>
       <button onClick={() => scrollToSection('work')}>Work</button>
       <button onClick={() => scrollToSection('contact')}>Contact</button>

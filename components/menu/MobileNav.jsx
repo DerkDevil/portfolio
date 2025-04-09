@@ -65,7 +65,6 @@ const MobileNav = () => {
           </div>
           <nav className="flex flex-col justify-center items-center gap-8 text-xl">
             <button onClick={() => handleClick('home')}>Home</button>
-            <button onClick={() => handleClick('services')}>Services</button>
             <button onClick={() => handleClick('resume')}>Resume</button>
             <button onClick={() => handleClick('work')}>Work</button>
             <button onClick={() => handleClick('contact')}>Contact</button>
