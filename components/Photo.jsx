@@ -5,12 +5,12 @@ import Image from "next/image";
 const Photo = () => {
     return (
         <div className="w-full h-full relative">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.1, duration: 0.5, ease: "easeIn" } }}>
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.1, duration: 0.5, ease: "easeIn" } }} className="ml-1 w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] xl:ml-2 absolute">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.2, ease: "easeIn" } }}>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.2, ease: "easeIn" } }} className="ml-1 w-[298px] h-[298px] xl:w-[373px] xl:h-[373px] xl:ml-2 absolute">
                     <Image src="/assets/photo.png" priority quality={100} fill alt="" className="object-contain"/>
                 </motion.div>
 
-                <motion.svg className="w-[304px] xl:w-[508px] h-[304px] xl:h-[508px]" fill="transparent" viewBox="0 0 506 506" xmlns="http://www.w3.org/2000/svg" >
+                <motion.svg className="w-[304px] xl:w-[381px] h-[304px] xl:h-[381px]" fill="transparent" viewBox="0 0 506 506" xmlns="http://www.w3.org/2000/svg" >
                     <motion.circle
                         cx="253"
                         cy="253"
