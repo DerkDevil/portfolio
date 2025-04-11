@@ -26,20 +26,17 @@ const Header = ({ scrollToSection }) => {
         ${scrolled ? 'bg-black/80 py-4 shadow-md backdrop-blur-md' : 'bg-transparent py-8 xl:pt-12'}`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
             Dereck<span className="text-accent">.</span>
           </h1>
         </Link>
 
-        {/* Desktop nav & hire me button */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav scrollToSection={scrollToSection} />
           <Button onClick={() => scrollToSection('contact')}>Hire Me</Button>
         </div>
 
-        {/* Mobile nav */}
         <div className="xl:hidden">
           <MobileNav scrollToSection={scrollToSection} />
         </div>
