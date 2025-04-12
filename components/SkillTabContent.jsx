@@ -11,6 +11,7 @@ const SkillTabContent = ({ title, description, skillList }) => {
             <TooltipProvider delayDuration={100}>
               <Tooltip>
                 <TooltipTrigger
+                  aria-label={skill.name}
                   className="w-full h-[120px] bg-[#232329] rounded-xl flex items-center justify-center transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-105">
                   <div className="text-6xl transition-all duration-300 group-hover:text-accent">
                     {skill.icon}
