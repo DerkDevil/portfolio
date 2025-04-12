@@ -24,7 +24,7 @@ const SkillsSection = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { ease: "easeIn" } }}
-      className="min-h-[80vh] flex items-center justify-center py-10 xl:py-20"
+      className="min-h-[90vh] flex items-center justify-center pt-10 xl:pt-20"
     >
       <div className="container mx-auto">
         {isMobile ? (
