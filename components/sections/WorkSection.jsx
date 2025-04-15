@@ -70,7 +70,7 @@ const experiences = [
 ];
 
 
-const WorkComponent = () => {
+const WorkSection = () => {
   return (
     <section className="min-h-[85vh] flex items-center justify-center pt-5 xl:pt-10 px-4">
       <div className="container mx-auto">
@@ -139,4 +139,4 @@ const WorkComponent = () => {
   );
 };
 
-export default WorkComponent;
+export default WorkSection;

@@ -1,14 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { skillsSections } from "@/app/data/skillsData";
 import SkillTabContent from "@/components/SkillTabContent";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const SkillsComponent = () => {
+const SkillsSection = () => {
   const [isMobile, setIsMobile] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
 
@@ -77,4 +76,4 @@ const SkillsComponent = () => {
   );
 };
 
-export default SkillsComponent; 
+export default SkillsSection; 

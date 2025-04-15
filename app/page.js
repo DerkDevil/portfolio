@@ -2,8 +2,8 @@
 import { useContext } from 'react';
 import { ScrollContext } from '../components/ScrollManager';
 import ContactSection from "../components/sections/ContactSection";
-import WorkSection from "../components/sections/WorkComponent"
-import SkillsSection from "../components/sections/SkillsComponent";
+import WorkSection from "../components/sections/WorkSection"
+import SkillsSection from "../components/sections/SkillsSection";
 import HomeSection from "../components/sections/HomeSection";
 
 const Home = () => {
