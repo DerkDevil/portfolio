@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import Link from 'next/link';
 import { Button } from './ui/button';
-
-// components
 import Nav from './menu/Nav';
 import MobileNav from './menu/MobileNav';
+import { ScrollContext } from './ScrollManager';
 
-const Header = ({ scrollToSection }) => {
+const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { scrollToSection } = useContext(ScrollContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,10 +21,7 @@ const Header = ({ scrollToSection }) => {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out 
-        ${scrolled ? 'bg-black/80 py-4 shadow-md backdrop-blur-md' : 'bg-transparent py-8 xl:pt-12'}`}
-    >
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${scrolled ? 'bg-black/80 py-4 shadow-md backdrop-blur-md' : 'bg-transparent py-8 xl:pt-12'}`}>
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <h1 className="text-4xl font-semibold">
@@ -33,12 +30,12 @@ const Header = ({ scrollToSection }) => {
         </Link>
 
         <div className="hidden xl:flex items-center gap-8">
-          <Nav scrollToSection={scrollToSection} />
+          <Nav />
           <Button onClick={() => scrollToSection('contact')}>Hire Me</Button>
         </div>
 
         <div className="xl:hidden">
-          <MobileNav scrollToSection={scrollToSection} />
+          <MobileNav />
         </div>
       </div>
     </header>
