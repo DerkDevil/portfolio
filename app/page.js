@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className='mt-24 xl:mt-20'>
-      <div ref={homeRef} className="scroll-mt-24 xl:scroll-mt-16"><HomeSection /></div>
+      <div ref={homeRef} className="scroll-mt-24 xl:scroll-mt-20"><HomeSection /></div>
       <div ref={skillsRef} className="scroll-mt-16"><SkillsSection /></div>
       <div ref={workRef} className="scroll-mt-16"><WorkSection /></div>
       <div ref={contactRef} className="scroll-mt-16"><ContactSection /></div>

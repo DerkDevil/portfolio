@@ -41,7 +41,7 @@ const ContactSection = () => {
   return (
     <section className="min-h-screen py-20 px-4 xl:px-0 bg-background text-white">
       <div className="container mx-auto grid xl:grid-cols-2 gap-12">
-        <div className="bg-[#1e1e1f] p-8 rounded-xl">
+        <div className="bg-[#232329] p-8 rounded-xl">
           <h2 className="text-accent text-3xl font-semibold mb-4">Contáctame</h2>
           <p className="text-white/70 mb-8">
             Cada gran proyecto comienza con una conversación. Si tienes una idea o solo quieres conectar, estaré feliz de hablar contigo.
@@ -50,18 +50,18 @@ const ContactSection = () => {
           <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Input
-                className="bg-primary text-white border-accent focus:outline-none focus:ring-0 autofill:bg-primary autofill:text-white"
+                className="bg-primary text-white border-accent"
                 name="name"
                 placeholder="Nombre completo"
                 required
               />
               <Input
-                className="bg-primary text-white border-accent focus:outline-none focus:ring-0 autofill:bg-primary autofill:text-white"
+                className="bg-primary text-white border-accent"
                 name="phone"
                 placeholder="Teléfono"
               />
               <Input
-                className="bg-primary text-white md:col-span-2 border-accent focus:outline-none focus:ring-0 autofill:bg-primary autofill:text-white"
+                className="bg-primary text-white md:col-span-2 border-accent"
                 name="email"
                 type="email"
                 placeholder="Correo electrónico"
@@ -89,7 +89,7 @@ const ContactSection = () => {
 
         <div className="flex flex-col gap-8 text-white/80">
           <div className="flex items-center gap-4">
-            <div className="p-3 bg-[#1e1e1f] rounded-lg">
+            <div className="p-3 bg-[#232329] rounded-lg">
               <Phone className="text-accent" />
             </div>
             <div>
@@ -98,7 +98,7 @@ const ContactSection = () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="p-3 bg-[#1e1e1f] rounded-lg">
+            <div className="p-3 bg-[#232329] rounded-lg">
               <Mail className="text-accent" />
             </div>
             <div>
