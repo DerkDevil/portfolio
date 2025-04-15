@@ -21,7 +21,7 @@ const CustomSheet = ({ isOpen, onClose, children }) => {
           isOpen ? 'translate-x-0 pointer-events-auto' : 'translate-x-full'
         }`}
       >
-        <button onClick={onClose} className="absolute right-8 top-8">
+        <button aria-label="Cerrar menú" onClick={onClose} className="absolute right-8 top-8">
           <IoMdClose className="text-3xl text-accent" />
         </button>
         {children}

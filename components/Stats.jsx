@@ -20,9 +20,8 @@ const Stats = () => {
               className="flex flex-col items-center justify-center text-center"
             >
               <CountUp
+                start={0}
                 end={item.num}
-                duration={3}
-                delay={0.2}
                 className="text-4xl xl:text-6xl font-extrabold"
               />
               <p className="text-sm xl:text-base mt-2 text-white/80 max-w-[120px]">
