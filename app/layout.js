@@ -1,5 +1,6 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 // components
 import Header from "../components/Header"
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           {children}
         </ScrollManager>
 
+        <Analytics />
         <div id="mobile-nav-root" />
       </body>
     </html>
